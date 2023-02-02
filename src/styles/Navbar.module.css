@@ -42,11 +42,12 @@
   margin: 0;
   padding-left: 1rem;
 }
-.menu_items li {
+.menu_items li a{
   display: flex;
   color: var(--color-gray);
   align-items: center;
   gap: 0.5rem;
+  text-decoration: none;
 }
 .menu_items li span {
   color: var(--bag-dark);

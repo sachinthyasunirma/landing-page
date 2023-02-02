@@ -22,8 +22,10 @@ function Navigationbar() {
         <Dropdown btn_style={styles.navbar_toggler} title={<AiOutlineMenu />}>
           <ul className={styles.menu_items}>
             <li>
-              <IoMdSettings />
-              <span>Settings</span>
+              <Link href={"#"}>
+                <IoMdSettings />
+                <span>Settings</span>
+              </Link>
             </li>
           </ul>
         </Dropdown>
