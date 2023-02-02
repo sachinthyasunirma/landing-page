@@ -7,13 +7,13 @@ function PaintingView() {
         <div className="col-sm-7">
           <div className={styles.painting_text_content}>
             <div className={styles.painting_text_header}>
-              <div data-aos="fade-right" data-aos-delay={1200} className={styles.text_header_top}>Odio morbi</div>
-              <div data-aos="fade-left" data-aos-delay={1200} className={styles.text_header_main}>Urna aliquam tinc</div>
-              <div data-aos="fade-right" data-aos-delay={1200} className={styles.text_header_bottom}>
+              <div data-aos="fade-right" data-aos-delay={1000} className={styles.text_header_top}>Odio morbi</div>
+              <div data-aos="fade-left" data-aos-delay={1000} className={styles.text_header_main}>Urna aliquam tinc</div>
+              <div data-aos="fade-right" data-aos-delay={1000} className={styles.text_header_bottom}>
                 Aliquam pellentesque
               </div>
             </div>
-            <div data-aos="fade-right" data-aos-delay={1200} className="d-flex flex-column flex-sm-row">
+            <div data-aos="fade-right" data-aos-delay={1000} className="d-flex flex-column flex-sm-row">
               <div className="col-sm-3"></div>
               <div className="col-sm-9">
                 Sed nunc nunc sagittis nulla varius. Vitae justo volutpat dolor
@@ -27,7 +27,7 @@ function PaintingView() {
             </div>
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-delay={1200} className="col-sm-5 p-0 m-0 py-4">
+        <div data-aos="fade-left" data-aos-delay={1000} className="col-sm-5 p-0 m-0 py-4">
           <LazyLoadImage className="img-fluid" src="/assets/img9.png" alt="image09" />
         </div>
       </div>
