@@ -6,7 +6,7 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --font-space-grotesk : 'Space Grotesk', sans-serif;
-  --text-black: #0000;
+  --text-black: rgb(0, 0, 0);
   --text-white: #FFFF;
   --bag-dark: #403b3b;
   --color-gray: #d1d1d1;

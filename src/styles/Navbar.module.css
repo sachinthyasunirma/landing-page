@@ -1,0 +1,56 @@
+.prev_link a {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.09rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-black);
+}
+.prev_link a:hover{
+  color: var(--color-gray);
+}
+.brand_title {
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.brand_main {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.navbar_toggler {
+  padding: 0.4rem 0.8rem;
+  color: var(--text-white);
+  background-color: var(--bag-dark);
+  border: none;
+}
+.navbar_toggler:focus {
+  border: none;
+}
+/* .navbar_toggler:hover{
+    border: 1px solid var(--bag-dark);
+    background-color: var(--text-white);
+    color: var(--bag-dark);
+  } */
+
+.menu_items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 1rem;
+}
+.menu_items li {
+  display: flex;
+  color: var(--color-gray);
+  align-items: center;
+  gap: 0.5rem;
+}
+.menu_items li span {
+  color: var(--bag-dark);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
