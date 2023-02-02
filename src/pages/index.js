@@ -1,11 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import React, { Suspense } from "react";
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "@/styles/Home.module.css";
+import SyncLoader from "react-spinners/SyncLoader";
 
-const inter = Inter({ subsets: ['latin'] })
+const PaintingGallery = React.lazy(() =>
+  import("@/components/gallery/PaintingGallery")
+);
 
-export default function Home() {
+const inter = Inter({ subsets: ["latin"] });
+
+export default function Home({ gallery, arts }) {
   return (
     <>
       <Head>
@@ -15,7 +21,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <section className="art-gallery mb-4">
+          <Suspense fallback={<SyncLoader color="#36d7b7" />}>
+            <PaintingGallery data={gallery} />
+          </Suspense>
+        </section>
       </main>
     </>
-  )
+  );
+}
+
+export async function getServerSideProps() {
+  const { art } = await import("../data/PaintingData.json");
+  const { art_spe } = await import("../data/PaintingData.json");
+  return {
+    props: {
+      gallery: art,
+      arts: art_spe,
+    },
+  };
 }
