@@ -26,6 +26,12 @@ export default function Home({ gallery, arts }) {
             <PaintingGallery data={gallery} />
           </Suspense>
         </section>
+        
+        <section className="art-gallery mb-4">
+          <Suspense fallback={<SyncLoader color="#36d7b7" />}>
+            <PaintingGallery data={arts} />
+          </Suspense>
+        </section>
       </main>
     </>
   );
