@@ -6,6 +6,7 @@ import styles from "@/styles/Home.module.css";
 import SyncLoader from "react-spinners/SyncLoader";
 import Link from "next/link";
 import { BsArrowDownCircle } from "react-icons/bs";
+import PaintingView from "@/components/gallery/PaintingView";
 
 const PaintingGallery = React.lazy(() =>
   import("@/components/gallery/PaintingGallery")
@@ -29,32 +30,61 @@ export default function Home({ gallery, arts }) {
           </Suspense>
         </section>
         <section className="text-area p-1 mb-4">
-        <div className="row p-0 m-0">
-          <div className="col-sm-5 d-flex py-2 px-lg-5 px-md-3 px-sm-2 justify-content-sm-end justify-content-center">
-            <div className="text_content">
-              <div className={styles.text_title}>Children of</div>
-              <div className={styles.text_title_main}>
-                forgotten
-                <br /> god
+          <div className="row p-0 m-0">
+            <div className="col-sm-5 d-flex py-2 px-lg-5 px-md-3 px-sm-2 justify-content-sm-end justify-content-center">
+              <div className="text_content">
+                <div className={styles.text_title}>Children of</div>
+                <div className={styles.text_title_main}>
+                  forgotten
+                  <br /> god
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-5 d-flex py-2 justify-content-center align-items-center">
+              <Link className="text-black text-decoration-none" href={"#"}>
+                <div className={styles.text_more}>
+                  explore more artworks
+                  <BsArrowDownCircle fontSize={"1.7rem"} />
+                </div>
+              </Link>
+            </div>
+            <div className="col-sm-2 py-2 px-0 d-flex align-items-center align-items-sm-end flex-column justify-content-end">
+              <button className={styles.text_btn}>START BIDDING</button>
+            </div>
+          </div>
+        </section>
+        <section className="text_area p-1 mb-4">
+          <div className="row p-0 m-0 text-center">
+            <div className="text_content d-flex flex-column align-items-sm-center justify-content-sm-center">
+              <div className={styles.text_header}>
+                Pellentesque ut consectetur nulla
+              </div>
+              <div className={styles.text_main_content}>
+                <div className="">
+                  <span>
+                    <strong>Eget quis </strong>ultrices id
+                  </span>
+                </div>
+                <div className="">
+                  <span className="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                    <span>
+                      eu nec <strong>nulla.</strong>
+                    </span>
+                    <span className={styles.text_wbtn}>Sometimes</span>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-sm-5 d-flex py-2 justify-content-center align-items-center">
-            <Link className="text-black text-decoration-none" href={"#"}>
-              <div className={styles.text_more}>
-                explore more artworks
-                <BsArrowDownCircle fontSize={"1.7rem"} />
-              </div>
-            </Link>
-          </div>
-          <div className="col-sm-2 py-2 px-0 d-flex align-items-center align-items-sm-end flex-column justify-content-end">
-            <button className={styles.text_btn}>START BIDDING</button>
-          </div>
-        </div>
-      </section>
+        </section>
         <section className="art-gallery mb-4">
           <Suspense fallback={<SyncLoader color="#36d7b7" />}>
             <PaintingGallery data={arts} />
+          </Suspense>
+        </section>
+        <section className="painting_des p-1 mb-4">
+          <Suspense fallback={<SyncLoader color="#36d7b7" />}>
+            <PaintingView />
           </Suspense>
         </section>
       </main>

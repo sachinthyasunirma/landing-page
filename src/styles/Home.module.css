@@ -28,3 +28,64 @@
   color: var(--text-white);
   background-color: var(--bag-dark);
 }
+/* text content -2 */
+.text_header {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.text_main_content {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  font-size: 3.8rem;
+  line-height: 3.9rem;
+}
+.text_wbtn {
+  font-size: 1.2rem;
+  border: 2px solid black;
+  border-radius: 100px;
+  padding: 0.4rem 2.5rem;
+  font-weight: 800;
+  line-height: initial;
+}
+
+@media screen and (max-width: 480px) {
+  .text_title_main {
+    font-size: 3rem;
+  }
+  .text_main_content {
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+  }
+  .painting_text_content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .painting_text_header {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-bottom: 1.5rem;
+  }
+  .text_header_top,
+  .text_header_bottom,
+  .text_header_main {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 480px)  {
+  .painting_text_content {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .painting_text_header{
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-bottom: 1rem;
+  }
+  .text_header_top,
+  .text_header_bottom,
+  .text_header_main {
+    font-size: 2.2rem;
+  }
+}
