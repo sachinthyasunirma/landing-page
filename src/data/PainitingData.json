@@ -1,0 +1,55 @@
+{
+    "art": [
+        {
+            "id": "image_01",
+            "image_url":"/assets/img1.png",
+            "description":"Id dignissim nulla tortor adipiscing tortor euismod.",
+            "price":22600
+        },
+        {
+            "id": "image_02",
+            "image_url":"/assets/img2.png",
+            "description":"Ut enim donec gravida mollis",
+            "price":7850
+        },
+        {
+            "id": "image_03",
+            "image_url":"/assets/img3.png",
+            "description":"Tellus vel enim curabiturneque amet amet.",
+            "price":10330
+        },
+        {
+            "id": "image_04",
+            "image_url":"/assets/img4.png",
+            "description":"Ut enim donec gravida",
+            "price":2150
+        },
+        {
+            "id": "image_05",
+            "image_url":"/assets/img5.png",
+            "description":"Et nulla et facilisi ",
+            "price":2150
+
+        }
+    ],
+    "art_spe":[
+        {
+            "id": "image_06",
+            "image_url":"/assets/img6.png",
+            "description":"Ultrices fames neque pharetra",
+            "artist":"Nulla faucibus"
+        },
+        {
+            "id": "image_07",
+            "image_url":"/assets/img7.png",
+            "description":"Ultrices fames neque pharetra",
+            "artist":"Nulla faucibus"
+        },
+        {
+            "id": "image_08",
+            "image_url":"/assets/img8.png",
+            "description":"Ultrices fames neque pharetra",
+            "artist":"Nulla faucibus"
+        }
+    ]
+}
