@@ -31,7 +31,7 @@ export default function Home({ gallery, arts }) {
         </section>
         <section className="text-area p-1 mb-4">
           <div className="row p-0 m-0">
-            <div className="col-sm-5 d-flex py-2 px-lg-5 px-md-3 px-sm-2 justify-content-sm-end justify-content-center">
+            <div data-aos="fade-up" data-aos-delay={1200} className="col-sm-5 d-flex py-2 px-lg-5 px-md-3 px-sm-2 justify-content-sm-end justify-content-center">
               <div className="text_content">
                 <div className={styles.text_title}>Children of</div>
                 <div className={styles.text_title_main}>
@@ -40,7 +40,7 @@ export default function Home({ gallery, arts }) {
                 </div>
               </div>
             </div>
-            <div className="col-sm-5 d-flex py-2 justify-content-center align-items-center">
+            <div data-aos="fade-down" data-aos-delay={1200} className="col-sm-5 d-flex py-2 justify-content-center align-items-center">
               <Link className="text-black text-decoration-none" href={"#"}>
                 <div className={styles.text_more}>
                   explore more artworks
@@ -48,7 +48,7 @@ export default function Home({ gallery, arts }) {
                 </div>
               </Link>
             </div>
-            <div className="col-sm-2 py-2 px-0 d-flex align-items-center align-items-sm-end flex-column justify-content-end">
+            <div data-aos="fade-left" data-aos-delay={1200} className="col-sm-2 py-2 px-0 d-flex align-items-center align-items-sm-end flex-column justify-content-end">
               <button className={styles.text_btn}>START BIDDING</button>
             </div>
           </div>
@@ -56,10 +56,10 @@ export default function Home({ gallery, arts }) {
         <section className="text_area p-1 mb-4">
           <div className="row p-0 m-0 text-center">
             <div className="text_content d-flex flex-column align-items-sm-center justify-content-sm-center">
-              <div className={styles.text_header}>
+              <div data-aos="fade-up" data-aos-delay={1200} className={styles.text_header}>
                 Pellentesque ut consectetur nulla
               </div>
-              <div className={styles.text_main_content}>
+              <div data-aos="fade-right" data-aos-delay={1500} className={styles.text_main_content}>
                 <div className="">
                   <span>
                     <strong>Eget quis </strong>ultrices id
@@ -83,9 +83,7 @@ export default function Home({ gallery, arts }) {
           </Suspense>
         </section>
         <section className="painting_des p-1 mb-4">
-          <Suspense fallback={<SyncLoader color="#36d7b7" />}>
-            <PaintingView />
-          </Suspense>
+          <PaintingView />
         </section>
       </main>
     </>

@@ -1,15 +1,36 @@
-.drawing_des{
-    font-size: 0.6rem;
-    font-weight: 700;
+.drawing_des {
+  font-size: 0.6rem;
+  font-weight: 700;
 }
-.drawing_price{
-    font-weight: bolder;
+.drawing_price {
+  font-weight: bolder;
 }
-.image img{
-    width: auto;
-    height: 100% !important;    
+.image img {
+  width: auto;
+  height: 100% !important;
 }
-.darwing_text{
-    font-size: 0.6rem;
-    margin-top: 0.08rem;
+.card{
+    background-color: var(--text-white);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+.card:hover{
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: ease-in-out 0.5s;
+}
+.darwing_text {
+  font-size: 0.6rem;
+  margin-top: 0.08rem;
+}
+
+@media screen and (min-width: 480px) {
+    .card:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: ease-in-out 0.5s;
+      }
 }

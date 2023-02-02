@@ -1,5 +1,6 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styles from "@/styles/PaintingView.module.css";
+import Image from "next/image";
 function PaintingView() {
   return (
     <>
@@ -7,13 +8,13 @@ function PaintingView() {
         <div className="col-sm-7">
           <div className={styles.painting_text_content}>
             <div className={styles.painting_text_header}>
-              <div className={styles.text_header_top}>Odio morbi</div>
-              <div className={styles.text_header_main}>Urna aliquam tinc</div>
-              <div className={styles.text_header_bottom}>
+              <div data-aos="fade-right" data-aos-delay={1200} className={styles.text_header_top}>Odio morbi</div>
+              <div data-aos="fade-left" data-aos-delay={1200} className={styles.text_header_main}>Urna aliquam tinc</div>
+              <div data-aos="fade-right" data-aos-delay={1200} className={styles.text_header_bottom}>
                 Aliquam pellentesque
               </div>
             </div>
-            <div className="d-flex flex-column flex-sm-row">
+            <div data-aos="fade-right" data-aos-delay={1200} className="d-flex flex-column flex-sm-row">
               <div className="col-sm-3"></div>
               <div className="col-sm-9">
                 Sed nunc nunc sagittis nulla varius. Vitae justo volutpat dolor
@@ -27,7 +28,7 @@ function PaintingView() {
             </div>
           </div>
         </div>
-        <div className="col-sm-5 p-0 m-0 py-4">
+        <div data-aos="fade-left" data-aos-delay={1200} className="col-sm-5 p-0 m-0 py-4">
           <LazyLoadImage className="img-fluid" src="/assets/img9.png" alt="image09" />
         </div>
       </div>
