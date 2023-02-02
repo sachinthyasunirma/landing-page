@@ -4,6 +4,8 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import SyncLoader from "react-spinners/SyncLoader";
+import Link from "next/link";
+import { BsArrowDownCircle } from "react-icons/bs";
 
 const PaintingGallery = React.lazy(() =>
   import("@/components/gallery/PaintingGallery")
@@ -26,7 +28,30 @@ export default function Home({ gallery, arts }) {
             <PaintingGallery data={gallery} />
           </Suspense>
         </section>
-        
+        <section className="text-area p-1 mb-4">
+        <div className="row p-0 m-0">
+          <div className="col-sm-5 d-flex py-2 px-lg-5 px-md-3 px-sm-2 justify-content-sm-end justify-content-center">
+            <div className="text_content">
+              <div className={styles.text_title}>Children of</div>
+              <div className={styles.text_title_main}>
+                forgotten
+                <br /> god
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-5 d-flex py-2 justify-content-center align-items-center">
+            <Link className="text-black text-decoration-none" href={"#"}>
+              <div className={styles.text_more}>
+                explore more artworks
+                <BsArrowDownCircle fontSize={"1.7rem"} />
+              </div>
+            </Link>
+          </div>
+          <div className="col-sm-2 py-2 px-0 d-flex align-items-center align-items-sm-end flex-column justify-content-end">
+            <button className={styles.text_btn}>START BIDDING</button>
+          </div>
+        </div>
+      </section>
         <section className="art-gallery mb-4">
           <Suspense fallback={<SyncLoader color="#36d7b7" />}>
             <PaintingGallery data={arts} />

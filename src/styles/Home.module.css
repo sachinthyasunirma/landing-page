@@ -1,0 +1,30 @@
+/* text content - 1 */
+.text_title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+}
+.text_title_main {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bolder;
+  line-height: 3.5rem;
+}
+.text_more {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+.text_btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 0.45rem;
+  letter-spacing: 0.08rem;
+  border: none;
+  color: var(--text-white);
+  background-color: var(--bag-dark);
+}
