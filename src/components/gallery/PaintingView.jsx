@@ -1,6 +1,5 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styles from "@/styles/PaintingView.module.css";
-import Image from "next/image";
 function PaintingView() {
   return (
     <>

@@ -1,5 +1,4 @@
 import styles from "@/styles/Card.module.css";
-import Image from "next/image";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function PaintingCard(props) {
