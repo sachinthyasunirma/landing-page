@@ -1,0 +1,15 @@
+.drawing_des{
+    font-size: 0.6rem;
+    font-weight: 700;
+}
+.drawing_price{
+    font-weight: bolder;
+}
+.image img{
+    width: auto;
+    height: 100% !important;    
+}
+.darwing_text{
+    font-size: 0.6rem;
+    margin-top: 0.08rem;
+}
